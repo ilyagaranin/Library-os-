@@ -7,9 +7,8 @@
 
 Input:
 
-`current_directory = os.getcwd()`
-
-`print(f"Сейчас мой скрипт работает отсюда: {current_directory}")`
+`current_directory = os.getcwd()
+print(f"Сейчас мой скрипт работает отсюда: {current_directory}")`
 
 Output:
 `Сейчас мой скрипт работает отсюда: C:\Users\ИмяПользователя\Documents\Project 1`
