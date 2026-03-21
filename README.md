@@ -30,6 +30,8 @@ Output:
 ['main.py', '.venv', 'data', 'requirements.txt']
 ```
 Можно заглянуть и в любую другую папку, просто передав ей путь в качестве аргумента: 
-`os.listdir('C:/Users/ИмяПользователя/Documents')`
+```python
+os.listdir('C:/Users/ИмяПользователя/Documents')
+```
 
 `os.chdir()` — сменить текущую директорию
