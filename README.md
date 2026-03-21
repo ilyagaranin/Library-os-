@@ -7,6 +7,8 @@
 
 Input:
 ```python
+import os
+
 current_directory = os.getcwd()
 print(f"Сейчас мой скрипт работает отсюда: {current_directory}")
 ```
@@ -21,6 +23,8 @@ Output:
 
 Input:
 ```python
+import os
+
 whats_inside = os.listdir()
 print(f"Внутри этой папки лежат: {whats_inside}")
 ```
@@ -38,6 +42,8 @@ os.listdir('C:/Users/ИмяПользователя/Documents')
 
 Input:
 ```python
+import os
+
 print(f"Сначала я здесь: {os.getcwd()}")
 
 # 'Переходим' в папку data (она должна быть внутри текущей директории)
@@ -47,6 +53,8 @@ print(f"Теперь я здесь: {os.getcwd()}")
 ```
 А как вернуться обратно, на уровень выше? Для этого используется стандартное обозначение:
 ```python
+import os
+
 os.chdir('..')
 print(f"И снова я здесь: {os.getcwd()}")
 ```
@@ -60,6 +68,8 @@ print(f"И снова я здесь: {os.getcwd()}")
 
 Тут всё просто. mkdir (make directory) создает новую папку в текущей директории.
 ```python
+import os
+
 # Создаст папку 'reports' прямо здесь
 os.mkdir('reports')
 ```
