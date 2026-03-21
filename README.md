@@ -4,13 +4,11 @@
 ## Команды
 
 `os.getcwd()` — узнать текущую рабочую директорию
-
 Input:
 ```python
 current_directory = os.getcwd()
 print(f"Сейчас мой скрипт работает отсюда: {current_directory}")
 ```
-
 Output:
 ```python
 Сейчас мой скрипт работает отсюда: C:\Users\Alex\Documents\Project 1
@@ -29,3 +27,6 @@ Output:
 Внутри этой папки лежат:
 ['main.py', '.venv', 'data', 'requirements.txt']
 ```
+Можно заглянуть и в любую другую папку, просто передав ей путь в качестве аргумента: os.listdir('C:/Users/ИмяПользователя/Documents').
+
+`os.chdir()` — сменить текущую директорию
