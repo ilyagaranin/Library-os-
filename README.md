@@ -8,6 +8,7 @@
 Input:
 
 `current_directory = os.getcwd()`
+
 `print(f"Сейчас мой скрипт работает отсюда: {current_directory}")`
 
 Output:
