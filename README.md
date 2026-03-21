@@ -85,3 +85,17 @@ import os
 # Эта команда создаст и 'archive', и вложенную в нее '2025', и 'photos'
 os.makedirs('archive/2025/photos')
 ```
+### №6
+
+`os.rmdir()` — удалить пустую папку
+
+### №7
+
+`rmdir` (remove directory) делает обратное — удаляет папку. Ключевое слово здесь — пустую. Если внутри директории что-то есть, Python откажется ее удалять и выдаст ошибку.
+```python
+import os
+
+# Сначала создадим, потом удалим
+os.mkdir('temp_folder')
+os.rmdir('temp_folder')
+```
