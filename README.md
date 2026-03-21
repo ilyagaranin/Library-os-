@@ -4,6 +4,7 @@
 ## Команды
 
 `os.getcwd()` — узнать текущую рабочую директорию
+
 Input:
 ```python
 current_directory = os.getcwd()
