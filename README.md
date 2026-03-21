@@ -33,5 +33,15 @@ Output:
 ```python
 os.listdir('C:/Users/ИмяПользователя/Documents')
 ```
-
+### №3
 `os.chdir()` — сменить текущую директорию
+
+Input:
+```python
+print(f"Сначала я здесь: {os.getcwd()}")
+
+# 'Переходим' в папку data (она должна быть внутри текущей директории)
+os.chdir('data')
+
+print(f"Теперь я здесь: {os.getcwd()}")
+```
