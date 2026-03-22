@@ -154,7 +154,7 @@ text_file = open("text.txt", "w")
 # запить текста в этот файл
 text_file.write("Это текстовый файл")
 ```
-w значит write (запись), a — это appending (добавление данных к уже существующему файлу), а r — reading (чтение). Больше о режимах открытия можно почитать https://pythonru.com/osnovy/fajly-v-python-vvod-vyvod#-open
+w Только для записи. Создаст новый файл, если не найдет с указанным именем., a — это appending (добавление данных к уже существующему файлу), а r — reading (чтение). Больше о режимах открытия можно почитать https://pythonru.com/osnovy/fajly-v-python-vvod-vyvod#-open
 
 `os.open()` - тоже самое но работа с байтами, а не с текстом
 ```python
