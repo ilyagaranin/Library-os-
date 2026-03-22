@@ -51,7 +51,28 @@ os.stat_result(st_mode=33206, …)
 ```
 ### --------
 
-`split()` - 
+`split()` - разъединяет путь и имя файла в разные строки
+
+Imput:
+```python
+import os
+print(os.path.split(r"D:\folder\test.txt"))
+```
+Output
+```python
+('D:\\folder', 'test.txt')
+```
+Обратное действие выполняет функция join
+
+Input:
+```python
+import os
+print(os.path.join(r"D:\folder", "test.txt"))
+```
+Output
+```python
+D:\folder\test.txt
+```
 
 ### --------
 
