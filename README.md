@@ -145,6 +145,27 @@ os.rmdir('temp_folder')
 ```
 ## Работа с файлами
 
+Встроенная `open()` vs `os.open()`
+
+`open()` - создание и открытие текстовых файлов (99% работы с ней)
+```python
+# создать новый текстовый файл
+text_file = open("text.txt", "w")
+# запить текста в этот файл
+text_file.write("Это текстовый файл")
+```
+w значит write (запись), a — это appending (добавление данных к уже существующему файлу), а r — reading (чтение). Больше о режимах открытия можно почитать https://pythonru.com/osnovy/fajly-v-python-vvod-vyvod#-open
+
+`os.open()` - тоже самое но работа с байтами, а не с текстом
+```python
+import os
+
+# Низкоуровневое открытие, возвращает файловый дескриптор (число)
+fd = os.open('file.txt', os.O_CREAT | os.O_WRONLY)
+os.write(fd, b'data')
+os.close(fd)
+```
+
 ### --------
 
 `os.rename()` — переименовать или переместить файл
