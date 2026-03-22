@@ -216,3 +216,18 @@ else:
     print(f"Пути '{path_to_check}' не существует. Давайте создадим папку.")
     os.makedirs(path_to_check)
 ```
+### --------
+
+### Вычисление размера
+
+`getsize()` - Вычесление размера документа или папки
+
+Input:
+```python
+import os
+print(os.path.getsize("D:\\test.txt"))
+```
+Output:
+```python
+136226 # размер в байтах
+```
